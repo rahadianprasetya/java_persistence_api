@@ -1,0 +1,41 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="BELAJAR">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+
+        <class>rahadian.prast.entity.Customer</class>
+        <class>rahadian.prast.entity.Category</class>
+        <class>rahadian.prast.entity.Member</class>
+        <class>rahadian.prast.entity.Users</class>
+        <class>rahadian.prast.entity.Credential</class>
+        <class>rahadian.prast.entity.Wallet</class>
+        <class>rahadian.prast.entity.Brand</class>
+        <class>rahadian.prast.entity.Product</class>
+        <class>rahadian.prast.entity.Employee</class>
+        <class>rahadian.prast.entity.Manager</class>
+        <class>rahadian.prast.entity.VicePresident</class>
+        <class>rahadian.prast.entity.Payment</class>
+        <class>rahadian.prast.entity.PaymentCreditcard</class>
+        <class>rahadian.prast.entity.PaymentGopay</class>
+        <class>rahadian.prast.entity.Transaction</class>
+        <class>rahadian.prast.entity.TransactionCredit</class>
+        <class>rahadian.prast.entity.TransactionDebit</class>
+
+        <properties>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://127.0.0.1:5432/java_persistence_api"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="postgres"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
