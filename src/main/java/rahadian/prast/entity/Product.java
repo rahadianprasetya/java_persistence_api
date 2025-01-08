@@ -1,6 +1,7 @@
 package rahadian.prast.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -68,4 +69,6 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
+
+
 }
